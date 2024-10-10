@@ -43,4 +43,18 @@ GROUP BY state_name
 ORDER BY SUM(Aland) DESC
 LIMIT 10;
 ```
+# Filter life expecancy over past 15 years
+```
+SELECT Country,
+MIN(`Life expectancy`),
+MAX(`Life expectancy`),
+ROUND(MAX(`Life expectancy`) - MIN(`Life expectancy`),1) AS Life_Increase_15_Years
+FROM world_life_expectancy
+GROUP BY Country
+HAVING MIN(`Life expectancy`) <> 0
+AND MAX(`Life expectancy`) <> 0
+ORDER BY Life_Increase_15_Years DESC;
+```
+
+
 
