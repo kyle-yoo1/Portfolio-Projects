@@ -74,10 +74,10 @@ SUM(CASE WHEN GDP >= 1500 THEN 1 ELSE 0 END) High_GDP_Count,
 AVG(CASE WHEN GDP >= 1500 THEN `Life expectancy` ELSE NULL END) High_GDP_Life_Exp,
 SUM(CASE WHEN GDP <= 1500 THEN 1 ELSE 0 END) Low_GDP_Count,
 AVG(CASE WHEN GDP <= 1500 THEN `Life expectancy` ELSE NULL END) Low_GDP_Life_Exp
-FROM world_life_expectancy
-;
-- High GDP = 1326 rows that have a GDP higher than 1500, their average of life expectancy is 74
-- Low GDP = 1612 rows that have a GDP lower than 1500, their average of life expectancy is 64;
+FROM world_life_expectancy;
 ```
+
+'->' High GDP = 1326 rows that have a GDP higher than 1500, and their average life expectancy is 74
+`->` Low GDP = 1612 rows that have a GDP lower than 1500, and their average life expectancy is 64
 
 
