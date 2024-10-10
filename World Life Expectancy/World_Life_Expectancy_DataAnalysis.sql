@@ -3,7 +3,7 @@
 -------------------------------------------------
 SELECT * FROM world_life_expectancy;
 
-# Filter life expecancy over past 15 years
+# Filter life expectancy over the past 15 years
 SELECT Country,
 MIN(`Life expectancy`),
 MAX(`Life expectancy`),
