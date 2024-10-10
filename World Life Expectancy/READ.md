@@ -95,5 +95,17 @@ GROUP BY Status;
 ```
 <img width="206" alt="4" src="https://github.com/user-attachments/assets/74ffd17f-f8cc-4b43-a81e-6a14710e8b63">
 
+- What is the correlation between average of BMI & Life Expectancy?
+```sql
+SELECT Country, ROUND(AVG(`Life expectancy`),1) AS Avg_Life_Exp, ROUND(AVG(BMI),1) AS Avg_BMI
+FROM world_life_expectancy
+GROUP BY Country
+HAVING Avg_Life_Exp > 0
+AND Avg_BMI > 0
+#ORDER BY Avg_BMI DESC
+ORDER BY Avg_BMI ASC;
+```
+<img width="358" alt="image" src="https://github.com/user-attachments/assets/6aa5b254-ff98-478c-990b-f63b26ca9f11">
+
 
 
