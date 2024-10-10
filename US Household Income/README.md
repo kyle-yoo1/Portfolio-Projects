@@ -28,8 +28,8 @@ This data contains detailed geographic information about different regions withi
 SELECT State_Name, SUM(ALand), SUM(AWater)
 FROM us_project.us_household_income
 GROUP BY State_Name
-#ORDER BY 2 DESC
-ORDER BY 3 DESC
+ORDER BY 2 DESC # ALand
+#ORDER BY 3 DESC # AWater
 LIMIT 10
 ;
 ```
