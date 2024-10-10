@@ -23,9 +23,19 @@ This data contains detailed geographic information about different regions withi
 - Other:
   - Primary
 ## Exploratory Data Analysis (EDA)
-- What is the Lowest and Highest of life expactancy each country has & Life increased over 15 years (Max - Min)
+- Which state has the Largest Land areas and Largest Water areas, limit the result to the top 10?
 ```sql
+SELECT State_Name, SUM(ALand), SUM(AWater)
+FROM us_project.us_household_income
+GROUP BY State_Name
+#ORDER BY 2 DESC
+ORDER BY 3 DESC
+LIMIT 10
+;
 ```
+<img width="188" alt="largest land" src="https://github.com/user-attachments/assets/5c5ed352-3610-4e68-9a0b-120bc4890bdf">
+<img width="191" alt="largest water" src="https://github.com/user-attachments/assets/23e47b3e-d73b-4bda-8ee6-d23dc61e485d">
+
 
 - Average Life Expectancy in each year from 2007 - 2022
 ```sql
