@@ -32,8 +32,8 @@ ORDER BY 2 DESC # ALand
 #ORDER BY 3 DESC # AWater
 LIMIT 10;
 # OUTCOME:
-# Top 10 Land States: Texas -> Michigan
-# Top 10 Water States: Michigan -> Wisconsin
+# Top 10 Land States: Texas -> Michigan (Left pic, left)
+# Top 10 Water States: Michigan -> Wisconsin (Right pic, right)
 ```
 <img width="188" alt="largest land" src="https://github.com/user-attachments/assets/5c5ed352-3610-4e68-9a0b-120bc4890bdf">
 <img width="191" alt="largest water" src="https://github.com/user-attachments/assets/23e47b3e-d73b-4bda-8ee6-d23dc61e485d">
