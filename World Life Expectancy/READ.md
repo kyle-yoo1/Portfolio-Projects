@@ -18,19 +18,16 @@ Factor Including:
   - Thinness 1-19 years: Prevalence of underweight individuals aged 1-19
   - Thinness 5-9 years: Prevalence of underweight individuals aged 5-9
   - Schooling: average years of schooling
-
-3. Disease Information:
-- Measles: number of reported cases per 1000 population
-- Polio: number of reported cases per 1000 population
-- Diphtheria: number of reported cases per 1000 population
-- HIV/AIDS: percentage of HIV/AIDS
-
-4. Economic Information:
-- GDP: Gross Domestic Product
-- Percentage expenditure: percentage of GDP per capita(%)
-
-5. Other
-- Row_ID: Unique identifier for each data
+- Disease Information:
+  - Measles: number of reported cases per 1000 population
+  - Polio: number of reported cases per 1000 population
+  - Diphtheria: number of reported cases per 1000 population
+  - HIV/AIDS: percentage of HIV/AIDS
+- Economic Information:
+  - GDP: Gross Domestic Product
+  - Percentage expenditure: percentage of GDP per capita (%)
+- Other
+  - Row_ID: Unique identifier for each data
 
 ## Exploratory Data Analysis (EDA)
 - Lowest and Highest of life expactancy each country has & Life increased over 15 years (Max - Min)
