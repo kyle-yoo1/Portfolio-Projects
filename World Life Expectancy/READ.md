@@ -1,4 +1,4 @@
-SELECT * 
+#SELECT * 
 FROM us_project.us_household_income;
 
 SELECT * 
