@@ -35,16 +35,8 @@ Factor Including:
 - Row_ID: Unique identifier for each data
 
 ## Exploratory Data Analysis (EDA)
-
+- Lowest and Highest of life expactancy each country has & Life increased over 15 years (Max - Min)
 ```sql
-SELECT state_name, SUM(Aland)
-FROM ushouseholdincome
-GROUP BY state_name
-ORDER BY SUM(Aland) DESC
-LIMIT 10;
-```
-# Filter life expecancy over past 15 years
-```
 SELECT Country,
 MIN(`Life expectancy`),
 MAX(`Life expectancy`),
