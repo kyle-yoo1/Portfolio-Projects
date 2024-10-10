@@ -16,8 +16,8 @@ This data contains detailed geographic information about different regions withi
   - Zip_Code: postal ZIP code
   - Area_Code: telephone area code
 - Spatial Data:
-  - ALand: land area in square meters
-  - AWater: water area in square meters
+  - ALand: land areas in square meters
+  - AWater: water areas in square meters
   - Lat: Latitude
   - Lon: Longitude
 - Other:
@@ -32,8 +32,8 @@ ORDER BY 2 DESC # ALand
 #ORDER BY 3 DESC # AWater
 LIMIT 10;
 # OUTCOME:
-# Top 10 Land States: Texas -> Michigan (Left pic, left)
-# Top 10 Water States: Michigan -> Wisconsin (Right pic, right)
+# Top 10 States Land: Texas -> Michigan (Left pic, left)
+# Top 10 States Water: Michigan -> Wisconsin (Right pic, right)
 ```
 <img width="188" alt="largest land" src="https://github.com/user-attachments/assets/5c5ed352-3610-4e68-9a0b-120bc4890bdf">
 <img width="191" alt="largest water" src="https://github.com/user-attachments/assets/23e47b3e-d73b-4bda-8ee6-d23dc61e485d">
