@@ -30,7 +30,7 @@ Factor Including:
   - Row_ID: Unique identifier for each data
 
 ## Exploratory Data Analysis (EDA)
-- Lowest and Highest of life expactancy each country has & Life increased over 15 years (Max - Min)
+- What is the Lowest and Highest of life expactancy each country has & Life increased over 15 years (Max - Min)
 ```sql
 SELECT Country,
 MIN(`Life expectancy`),
@@ -56,8 +56,7 @@ ORDER BY Year;
 ```
 <img width="109" alt="2" src="https://github.com/user-attachments/assets/944cfc5a-fcf5-49d8-8c22-944e2968a497">
 
-
-- Correlation between Average of GDP & Average of Life Expectancy
+- What is the correlation between Average of GDP & Average of Life Expectancy?
 ```sql
 SELECT Country, ROUND(AVG(`Life expectancy`),1) AS Avg_Life_Exp, ROUND(AVG(GDP),1) AS GDP
 FROM world_life_expectancy
@@ -71,7 +70,7 @@ ORDER BY GDP DESC
 <img width="337" alt="3" src="https://github.com/user-attachments/assets/1963a570-c73d-4ac0-adb8-25258825048e">
 
 
-- CASE STATEMENT [Average of High GDP VS Low GDP]
+- What is the average of high GDP and low GDP using CASE STATEMENT?
 ```sql
 SELECT
 SUM(CASE WHEN GDP >= 1500 THEN 1 ELSE 0 END) High_GDP_Count,
@@ -85,8 +84,7 @@ FROM world_life_expectancy;
 ```
 <img width="349" alt="highGDP vs lowGDP" src="https://github.com/user-attachments/assets/b5426811-1190-416b-8862-0280ad900d9d">
 
-
-- How many countries have developed and are developing?
+- How many countries have developed and are developing, also the average life expectancy?
 ```sql
 SELECT Status, COUNT(DISTINCT Country) AS Count_Country, ROUND(AVG(`Life expectancy`),1) AS Avg_Life_Exp
 FROM world_life_expectancy
