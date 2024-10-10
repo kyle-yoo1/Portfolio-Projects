@@ -44,6 +44,7 @@ ORDER BY Life_Increase_15_Years DESC;
 ```
 <img width="547" alt="1" src="https://github.com/user-attachments/assets/4530a93a-76ce-4e59-9eb8-160c9fd56624">
 
+
 - Average Life Expectancy in each year from 2007 - 2022
 ```sql
 SELECT Year, ROUND(AVG(`Life expectancy`),2) AS Avg_Life_Exp
@@ -54,6 +55,7 @@ GROUP BY Year
 ORDER BY Year;
 ```
 <img width="109" alt="2" src="https://github.com/user-attachments/assets/944cfc5a-fcf5-49d8-8c22-944e2968a497">
+
 
 - Correlation between Average of GDP & Average of Life Expectancy
 ```sql
@@ -68,6 +70,7 @@ ORDER BY GDP DESC
 ```
 <img width="337" alt="3" src="https://github.com/user-attachments/assets/1963a570-c73d-4ac0-adb8-25258825048e">
 
+
 - CASE STATEMENT [Average of High GDP VS Low GDP]
 ```sql
 SELECT
@@ -81,6 +84,7 @@ FROM world_life_expectancy;
 # Low GDP = 1612 rows that have a GDP lower than 1500, and their average life expectancy is 64.
 ```
 <img width="349" alt="highGDP vs lowGDP" src="https://github.com/user-attachments/assets/b5426811-1190-416b-8862-0280ad900d9d">
+
 
 - How many countries have developed and are developing?
 ```sql
