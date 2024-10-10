@@ -5,11 +5,10 @@ Statistical Analysis on Factors Influencing Life Expectancy
 This data is from the World Health Organization (WHO) which keeps track of the health status as well as many other related factors for all countries, considered data from 2007-2022 (15 years) for 193 countries for detailed analysis.
 
 Factor Including:
-
-1. Demographics and Country Information:
-- Country: 193 countries
-- Year: from 2007 - 2022 (15 years)
-- Status: developed or developing
+- Demographics and Country Information:
+  - Country: 193 countries
+  - Year: from 2007 - 2022 (15 years)
+  - Status: developed or developing
 
 2. Health Metrics:
 - Life expectancy: average lifespan of individuals in the country
