@@ -26,7 +26,7 @@ Factor Including:
 - Economic Information:
   - GDP: Gross Domestic Product
   - Percentage expenditure: percentage of GDP per capita (%)
-- Other
+- Other:
   - Row_ID: Unique identifier for each data
 
 ## Exploratory Data Analysis (EDA)
