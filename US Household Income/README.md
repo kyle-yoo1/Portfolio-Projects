@@ -1,24 +1,27 @@
-# 
-Statistical Analysis on Factors Influencing Life Expectancy
+# US Household Income Statistics & Geographical Locations
 
 ## About Dataset
-This data 
-
-Factor Including:
-- Demographics and Country Information:
-  -
-- Health Metrics:
- 
-- Disease Information:
-  - Measles: number of reported cases per 1000 population
-  - Polio: number of reported cases per 1000 population
-  - Diphtheria: number of reported cases per 1000 population
-  - HIV/AIDS: percentage of HIV/AIDS
-- Economic Information:
- 
+This data contains detailed geographic information about different regions within US states, which makes it suitable for analyzing these:
+- Identifiers:
+  -  Row_ID: unique identifier for each row
+  -  ID: another unique identifier for each place
+- Geographic Information:
+  - State_Code: code for each state
+  - State_Name: states in US (Alabama)
+  - State_ab: state abbreviation (AL for Alabama)
+  - County: name of county within the state
+  - City: name of city within the state
+  - Place: specific place within the city or county 
+  - Type: type of area (Track, City, Place)
+  - Zip_Code: postal ZIP code
+  - Area_Code: telephone area code
+- Spatial Data:
+  - ALand: land area in square meters
+  - AWater: water area in square meters
+  - Lat: Latitude
+  - Lon: Longitude
 - Other:
-  - Row_ID: Unique identifier for each data
-
+  - Primary
 ## Exploratory Data Analysis (EDA)
 - What is the Lowest and Highest of life expactancy each country has & Life increased over 15 years (Max - Min)
 ```sql
