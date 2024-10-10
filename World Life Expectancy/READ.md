@@ -79,5 +79,6 @@ FROM world_life_expectancy;
 # High GDP = 1326 rows that have a GDP higher than 1500, and their average life expectancy is 74.
 # Low GDP = 1612 rows that have a GDP lower than 1500, and their average life expectancy is 64.
 ```
+<img width="349" alt="highGDP vs lowGDP" src="https://github.com/user-attachments/assets/b5426811-1190-416b-8862-0280ad900d9d">
 
 
