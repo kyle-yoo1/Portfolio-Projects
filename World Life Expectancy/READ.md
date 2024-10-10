@@ -56,6 +56,17 @@ AND `Life expectancy` <> 0
 GROUP BY Year
 ORDER BY Year;
 ```
+- Correlation between Average of GDP & Average of Life Expectancy
+```sql
+SELECT Country, ROUND(AVG(`Life expectancy`),1) AS Avg_Life_Exp, ROUND(AVG(GDP),1) AS GDP
+FROM world_life_expectancy
+GROUP BY Country
+HAVING Avg_Life_Exp > 0
+AND GDP > 0
+ORDER BY GDP DESC
+#ORDER BY GDP ASC
+#ORDER BY Life_Exp ASC;
+```
 
 
 
