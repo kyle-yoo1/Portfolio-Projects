@@ -9,16 +9,15 @@ Factor Including:
   - Country: 193 countries
   - Year: from 2007 - 2022 (15 years)
   - Status: developed or developing
-
-2. Health Metrics:
-- Life expectancy: average lifespan of individuals in the country
-- Adult mortality: death rate of both sexes (probability of dying between 15 and 100 years per 1000 population)
-- Infant deaths: numbers of deaths of infants under 1 year old per 1000 population
-- Under-five deaths: numbers of deaths of babies under 5 years old per 1000 population
-- BMI: average body mass index of individuals in the country
-- Thinness 1-19 years: Prevalence of underweight individuals aged 1-19
-- Thinness 5-9 years: Prevalence of underweight individuals aged 5-9
-- Schooling: average years of schooling
+- Health Metrics:
+  - Life expectancy: average lifespan of individuals in the country
+  - Adult mortality: death rate of both sexes (probability of dying between 15 and 100 years per 1000 population)
+  - Infant deaths: numbers of deaths of infants under 1 year old per 1000 population
+  - Under-five deaths: numbers of deaths of babies under 5 years old per 1000 population
+  - BMI: average body mass index of individuals in the country
+  - Thinness 1-19 years: Prevalence of underweight individuals aged 1-19
+  - Thinness 5-9 years: Prevalence of underweight individuals aged 5-9
+  - Schooling: average years of schooling
 
 3. Disease Information:
 - Measles: number of reported cases per 1000 population
