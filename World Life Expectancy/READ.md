@@ -47,6 +47,8 @@ HAVING MIN(`Life expectancy`) <> 0
 AND MAX(`Life expectancy`) <> 0
 ORDER BY Life_Increase_15_Years DESC;
 ```
+<img width="547" alt="1" src="https://github.com/user-attachments/assets/4530a93a-76ce-4e59-9eb8-160c9fd56624">
+
 - Average Life Expectancy in each year from 2007 - 2022
 ```sql
 SELECT Year, ROUND(AVG(`Life expectancy`),2) AS Avg_Life_Exp
