@@ -82,4 +82,13 @@ FROM world_life_expectancy;
 ```
 <img width="349" alt="highGDP vs lowGDP" src="https://github.com/user-attachments/assets/b5426811-1190-416b-8862-0280ad900d9d">
 
+- How many countries have developed and are developing
+```sql
+SELECT Status, COUNT(DISTINCT Country) AS Count_Country, ROUND(AVG(`Life expectancy`),1) AS Avg_Life_Exp
+FROM world_life_expectancy
+GROUP BY Status;
+```
+<img width="206" alt="4" src="https://github.com/user-attachments/assets/74ffd17f-f8cc-4b43-a81e-6a14710e8b63">
+
+
 
