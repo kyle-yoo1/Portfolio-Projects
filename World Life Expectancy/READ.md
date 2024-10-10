@@ -58,6 +58,8 @@ AND `Life expectancy` <> 0
 GROUP BY Year
 ORDER BY Year;
 ```
+<img width="109" alt="2" src="https://github.com/user-attachments/assets/944cfc5a-fcf5-49d8-8c22-944e2968a497">
+
 - Correlation between Average of GDP & Average of Life Expectancy
 ```sql
 SELECT Country, ROUND(AVG(`Life expectancy`),1) AS Avg_Life_Exp, ROUND(AVG(GDP),1) AS GDP
@@ -69,6 +71,8 @@ ORDER BY GDP DESC
 #ORDER BY GDP ASC
 #ORDER BY Life_Exp ASC;
 ```
+<img width="337" alt="3" src="https://github.com/user-attachments/assets/1963a570-c73d-4ac0-adb8-25258825048e">
+
 - CASE STATEMENT [Average of High GDP VS Low GDP]
 ```sql
 SELECT
