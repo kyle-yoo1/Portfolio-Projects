@@ -64,7 +64,7 @@ HAVING Avg_Life_Exp > 0
 AND GDP > 0
 ORDER BY GDP DESC
 #ORDER BY GDP ASC
-#ORDER BY Life_Exp ASC;
+#ORDER BY Avg_Life_Exp ASC;
 ```
 <img width="337" alt="3" src="https://github.com/user-attachments/assets/1963a570-c73d-4ac0-adb8-25258825048e">
 
