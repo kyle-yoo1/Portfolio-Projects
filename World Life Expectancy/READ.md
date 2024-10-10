@@ -107,5 +107,15 @@ ORDER BY Avg_BMI ASC;
 ```
 <img width="358" alt="image" src="https://github.com/user-attachments/assets/6aa5b254-ff98-478c-990b-f63b26ca9f11">
 
+- What is the Total number of Adults who died at the end of the Year in the US using Rolling_Total?
+```sql
+SELECT Country, Year, `Life expectancy`,
+`Adult Mortality`,
+SUM(`Adult Mortality`) OVER (PARTITION BY Country ORDER BY Year) AS Rolling_Total
+FROM world_life_expectancy
+#WHERE Country LIKE '%United%'
+WHERE Country LIKE '%America';
+```
+<img width="479" alt="6" src="https://github.com/user-attachments/assets/b42430b2-e463-4b66-a28d-237fd4ecb434">
 
 
