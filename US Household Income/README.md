@@ -58,10 +58,21 @@ WHERE State_Name = 'georia';
 ```
 
 
-- What is the average of high GDP and low GDP using CASE STATEMENT?
+- What are the top 10 states of income average mean and median?
 ```sql
-
+# Find Mean & Median of each State, limit to top 10.
+SELECT u.State_Name, ROUND(AVG(Mean),1) AS Avg_Mean, Round(AVG(Median),1) AS Avg_Median
+FROM us_project.us_household_income u
+INNER JOIN us_project.us_household_income_statistics us
+	ON u.id = us.id
+WHERE Mean <> 0
+GROUP BY u.State_Name
+ORDER BY 2 ASC
+#ORDER BY 3 DESC
+LIMIT 10;
 ```
+<img width="175" alt="average income of mean and median" src="https://github.com/user-attachments/assets/c91e5916-6d40-4f2d-b5aa-57620ed2a027">
+
 
 - How many countries have developed and are developing, also the average life expectancy?
 ```sql
