@@ -45,7 +45,6 @@ FROM us_project.us_household_income u
 INNER JOIN us_project.us_household_income_statistics us
 	ON u.id = us.id
 WHERE Mean <> 0 # where mean is not 0
-;
 
 UPDATE us_project.us_household_income
 SET State_Name = 'Georgia'
@@ -53,14 +52,8 @@ WHERE State_Name = 'georia';
 ```
 <img width="274" alt="image" src="https://github.com/user-attachments/assets/682898a6-b2e9-4cbf-a7e3-b2f2f78a4962">
 
-```sql
-
-```
-
-
 - What are the top 10 states of income average mean and median?
 ```sql
-# Find Mean & Median of each State, limit to top 10.
 SELECT u.State_Name, ROUND(AVG(Mean),1) AS Avg_Mean, Round(AVG(Median),1) AS Avg_Median
 FROM us_project.us_household_income u
 INNER JOIN us_project.us_household_income_statistics us
