@@ -38,13 +38,21 @@ LIMIT 10;
 <img width="188" alt="largest land" src="https://github.com/user-attachments/assets/5c5ed352-3610-4e68-9a0b-120bc4890bdf">
 <img width="191" alt="largest water" src="https://github.com/user-attachments/assets/23e47b3e-d73b-4bda-8ee6-d23dc61e485d">
 
-
-- Average Life Expectancy in each year from 2007 - 2022
+- Clean the data: accurate state name
 ```sql
+SELECT u.State_Name, County, Type, `Primary`, Mean, Median
+FROM us_project.us_household_income u
+INNER JOIN us_project.us_household_income_statistics us
+	ON u.id = us.id
+WHERE Mean <> 0 # where mean is not 0
+;
 
+UPDATE us_project.us_household_income
+SET State_Name = 'Georgia'
+WHERE State_Name = 'georia';
 ```
+<img width="274" alt="image" src="https://github.com/user-attachments/assets/682898a6-b2e9-4cbf-a7e3-b2f2f78a4962">
 
-- What is the correlation between Average of GDP & Average of Life Expectancy?
 ```sql
 
 ```
