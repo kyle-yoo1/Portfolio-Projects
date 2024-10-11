@@ -7,11 +7,11 @@ This data contains detailed geographic information about different regions withi
   -  ID: another unique identifier for each place
 - Geographic Information:
   - State_Code: code for each state
-  - State_Name: states in US (Alabama)
-  - State_ab: state abbreviation (AL for Alabama)
+  - State_Name: states in the US (ex. Alabama)
+  - State_ab: state abbreviation (ex. AL for Alabama)
   - County: name of county within the state
   - City: name of city within the state
-  - Place: specific place within the city or county 
+  - Place: a specific place within the city or county 
   - Type: type of area (Track, City, Place)
   - Zip_Code: postal ZIP code
   - Area_Code: telephone area code
@@ -23,7 +23,7 @@ This data contains detailed geographic information about different regions withi
 - Other:
   - Primary
 ## Exploratory Data Analysis (EDA)
-- Which state has the Largest Land areas and Largest Water areas, limit the result to the top 10?
+- Which top 10 states have the Largest Land areas and Largest Water areas?
 ```sql
 SELECT State_Name, SUM(ALand), SUM(AWater)
 FROM us_project.us_household_income
