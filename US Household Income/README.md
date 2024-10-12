@@ -71,7 +71,7 @@ LIMIT 10;
 <img width="175" alt="Income of mean and median-bottom 10" src="https://github.com/user-attachments/assets/ddd9434b-98f6-4607-8e5a-75302b9575ec">
 <img width="190" alt="Income of mean and median-top 10" src="https://github.com/user-attachments/assets/b02c28c5-27c9-4de3-9a73-fd91893e4900">
 
-- Find the each type of how many it has and the average of mean and median.
+-- Find the income average of mean and median of each Type, list count.
 ```sql
 SELECT Type, COUNT(Type), ROUND(AVG(Mean),1) AS Avg_Mean, Round(AVG(Median),1) AS Avg_Median
 FROM us_project.us_household_income u
