@@ -72,10 +72,18 @@ LIMIT 10;
 <img width="190" alt="Income of mean and median-top 10" src="https://github.com/user-attachments/assets/b02c28c5-27c9-4de3-9a73-fd91893e4900">
 
 
-- How many countries have developed and are developing, also the average life expectancy?
+- Finding out the highest and lowest Average Mean & Median Income of each State?
 ```sql
-
+SELECT Type, COUNT(Type), ROUND(AVG(Mean),1) AS Avg_Mean, Round(AVG(Median),1) AS Avg_Median
+FROM us_project.us_household_income u
+INNER JOIN us_project.us_household_income_statistics us
+	ON u.id = us.id
+WHERE Mean <> 0
+GROUP BY 1
+ORDER BY 1 DESC
+LIMIT 20
 ```
+<img width="226" alt="type-average mean and median" src="https://github.com/user-attachments/assets/fda53b1c-f127-4503-8789-e4280746050a">
 
 - What is the correlation between average of BMI & Life Expectancy?
 ```sql
