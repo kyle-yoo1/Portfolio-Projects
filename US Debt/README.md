@@ -2,6 +2,7 @@
 
 ## Table of Contents
 - [Project Overview](#project-overview)
+- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-(eda))
 
 ## Project Overview
 
