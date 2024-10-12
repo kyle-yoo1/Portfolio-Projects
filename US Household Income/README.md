@@ -82,10 +82,10 @@ GROUP BY 1
 ORDER BY 2 DESC
 LIMIT 20
 ;
-
+```
 <img width="226" alt="type,count" src="https://github.com/user-attachments/assets/fbbc5551-58b3-40e0-9bc6-028cbefeda97">
 
-- What is the average Mean and Median of each state and city?
+- What is the average Mean and Median of each state and city, order by mean?
 ```sql
 SELECT u.State_Name, City, ROUND(AVG(Mean),1), ROUND(AVG(Median),1)
 FROM us_project.us_household_income u
