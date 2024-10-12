@@ -6,3 +6,8 @@ This data analysis project aims to provide insights into U.S. public debt trends
 
 ### Tools
 - Excel - Data cleaning, data analysis
+
+### Exploratory Data Analysis (EDA)
+- What was the yearly debt percentage increase for each year compared to the previous year?
+- Which months historically have seen the highest/lowest increases in Total Debt?
+- What is the projected growth of the publicly held debt in the next few years, by 2023?
