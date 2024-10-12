@@ -13,6 +13,7 @@ This data analysis project aims to provide insights into U.S. public debt trends
 
 ## Exploratory Data Analysis (EDA)
 - What was the yearly debt percentage increase for each year compared to the previous year?
+  - ㅇㅇ
 
 ![image](https://github.com/user-attachments/assets/bcbd898a-db5a-4f80-8088-be825467375c)
 
