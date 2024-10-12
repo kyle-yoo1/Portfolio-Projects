@@ -52,7 +52,7 @@ WHERE State_Name = 'georia';
 ```
 <img width="274" alt="image" src="https://github.com/user-attachments/assets/682898a6-b2e9-4cbf-a7e3-b2f2f78a4962">
 
-- What are the top 10 states of income average mean and median?
+- What are the 10 states of income mean and median, top 10 & bottom 10?
 ```sql
 SELECT u.State_Name, ROUND(AVG(Mean),1) AS Avg_Mean, Round(AVG(Median),1) AS Avg_Median
 FROM us_project.us_household_income u
@@ -60,11 +60,16 @@ INNER JOIN us_project.us_household_income_statistics us
 	ON u.id = us.id
 WHERE Mean <> 0
 GROUP BY u.State_Name
-ORDER BY 2 ASC
+ORDER BY 2 DESC
+#ORDER BY 2 ASC
 #ORDER BY 3 DESC
 LIMIT 10;
+# OUTCOME:
+# Bottom 10 States mean Texas -> Michigan (Left pic, left)
+# Top 10 States mean: Michigan -> Wisconsin (Right pic, right)
 ```
-<img width="175" alt="average income of mean and median" src="https://github.com/user-attachments/assets/c91e5916-6d40-4f2d-b5aa-57620ed2a027">
+<img width="175" alt="Income of mean and median-bottom 10" src="https://github.com/user-attachments/assets/ddd9434b-98f6-4607-8e5a-75302b9575ec">
+<img width="190" alt="Income of mean and median-top 10" src="https://github.com/user-attachments/assets/b02c28c5-27c9-4de3-9a73-fd91893e4900">
 
 
 - How many countries have developed and are developing, also the average life expectancy?
