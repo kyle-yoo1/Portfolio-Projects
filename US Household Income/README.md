@@ -1,5 +1,9 @@
 # US Household Income Statistics & Geographical Locations
 
+## Table of Contents
+- [About Dataset](#about-dataset)
+- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-(eda))
+
 ## About Dataset
 This data contains detailed geographic information about different regions within US states, which makes it suitable for analyzing these:
 - Identifiers:
