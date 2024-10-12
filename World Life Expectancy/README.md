@@ -1,6 +1,10 @@
 # Life Expectancy (WHO) 
 Statistical Analysis on Factors Influencing Life Expectancy
 
+## Table of Contents
+- [About Dataset](#about-dataset)
+- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-(eda))
+
 ## About Dataset
 This data is from the World Health Organization (WHO) which keeps track of the health status as well as many other related factors for all countries, considered data from 2007-2022 (15 years) for 193 countries for detailed analysis.
 
