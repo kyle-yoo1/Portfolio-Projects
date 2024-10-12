@@ -12,12 +12,11 @@ This data analysis project aims to provide insights into U.S. public debt trends
 - Excel - Data cleaning & Data Analysis
 
 ## Exploratory Data Analysis (EDA)
-- What was the yearly debt percentage increase for each year compared to the previous year?
-  - ㅇㅇ
+- What was the Yearly Debt Percentage increase for each year compared to the previous year?
+  - For the Total Public Debt Outstanding in the years 2016-2019, the average increase was around 5%. In 2020, we can see a large spike that was most likely caused by the pandemic responses in the U.S.
 
 ![image](https://github.com/user-attachments/assets/bcbd898a-db5a-4f80-8088-be825467375c)
 
--- d
 
 - Which months historically have seen the highest/lowest increases in Total Debt?
 - What is the projected growth of the publicly held debt in the next few years, by 2023?
