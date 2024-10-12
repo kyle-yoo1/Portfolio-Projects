@@ -65,8 +65,8 @@ ORDER BY 2 DESC
 #ORDER BY 3 DESC
 LIMIT 10;
 # OUTCOME:
-# Bottom 10 States mean Texas -> Michigan (Left pic, left)
-# Top 10 States mean: Michigan -> Wisconsin (Right pic, right)
+# Bottom 10 States Mea: Puerto Rico -> Idaho (Left pic, Avg_Mean)
+# Top 10 States Mean: Columbia -> New York (right pic, Avg_Mean)
 ```
 <img width="175" alt="Income of mean and median-bottom 10" src="https://github.com/user-attachments/assets/ddd9434b-98f6-4607-8e5a-75302b9575ec">
 <img width="190" alt="Income of mean and median-top 10" src="https://github.com/user-attachments/assets/b02c28c5-27c9-4de3-9a73-fd91893e4900">
