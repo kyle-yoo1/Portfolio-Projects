@@ -1,22 +1,26 @@
 # Dohoon Yoo
-# US Household Incomee Exploratory Data Analysis
+# US Household Income Exploratory Data Analysis
 --------------------------------------------------------
 # Area of the Land & Water
 
-#SELECT State_Name, County, City, ALand, AWater
+SELECT State_Name, County, City, ALand, AWater;
+
 SELECT State_Name, SUM(ALand), SUM(AWater)
 FROM us_project.us_household_income
 GROUP BY State_Name
-ORDER BY 3 DESC
+ORDER BY 2 DESC
+# ORDER BY 3 DESC
 LIMIT 10
 ;
+
+
 
 # Mean was 0 = dirty data
 SELECT u.State_Name, County, Type, `Primary`, Mean, Median
 FROM us_project.us_household_income u
 INNER JOIN us_project.us_household_income_statistics us
 	ON u.id = us.id
-WHERE Mean <> 0
+WHERE Mean <> 0 # where mean is not 0
 ;
 
 UPDATE us_project.us_household_income
@@ -31,19 +35,20 @@ INNER JOIN us_project.us_household_income_statistics us
 	ON u.id = us.id
 WHERE Mean <> 0
 GROUP BY u.State_Name
-ORDER BY 3 DESC
+ORDER BY 2 DESC
+#ORDER BY 2 ASC
+#ORDER BY 3 DESC
 LIMIT 10;
 
 
-# Finding out the highest and lowest Average Mean & Median Income of each State.
-SELECT u.State_Name, COUNT(Type), ROUND(AVG(Mean),1) AS Avg_Mean, Round(AVG(Median),1) AS Avg_Median
+# Find the income average of mean and median of each Type, list count.
+SELECT Type, COUNT(Type), ROUND(AVG(Mean),1) AS Avg_Mean, Round(AVG(Median),1) AS Avg_Median
 FROM us_project.us_household_income u
 INNER JOIN us_project.us_household_income_statistics us
 	ON u.id = us.id
 WHERE Mean <> 0
 GROUP BY 1
-HAVING COUNT(Type) > 100
-ORDER BY 4 DESC
+ORDER BY 2 DESC
 LIMIT 20
 ;
 
@@ -52,16 +57,14 @@ FROM us_household_income
 WHERE Type = 'Community';
 -------------------------------------------------------------------------
 
-# Average of Mean & Median of Each State Name and City
+# What is the average income of Mean and Median of each state and city?
 SELECT u.State_Name, City, ROUND(AVG(Mean),1), ROUND(AVG(Median),1)
 FROM us_project.us_household_income u
 JOIN us_project.us_household_income_statistics us
 	ON u.id = us.id
 GROUP BY u.State_Name, City
 ORDER BY ROUND(AVG(Mean),1) DESC
-LIMIT 10
-
-;
+LIMIT 10;
 
 
 
