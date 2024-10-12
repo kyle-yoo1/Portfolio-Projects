@@ -17,7 +17,6 @@ This data analysis project aims to provide insights into U.S. public debt trends
 
 ![image](https://github.com/user-attachments/assets/bcbd898a-db5a-4f80-8088-be825467375c)
 
-
 - Which months historically have seen the highest/lowest increases in Total Debt?
   - The highest Debt increases historically occurred during the months of January, February, November, and December.
   - The lowest Debt increases historically occurred during the months of April, May, June, and July.
@@ -27,5 +26,6 @@ This data analysis project aims to provide insights into U.S. public debt trends
 
 - What is the projected growth of the publicly held debt in the next few years, by 2023?
   - From 1997 to 2007, we saw an increase of about 1 trillion to publicly held debt. From 2008 to 2019, the debt increased from 6 trillion to 17 trillion. From 2020 to 2024, the debt increased from 21.5 trillion to 24 trillion. From 2025 to 2030, it is projected that the Publicly held debt will increase to 37 trillion.
+  - 
 ![image](https://github.com/user-attachments/assets/c99c82da-f63a-480f-ab7a-fab4c3c0f0ca)
 
