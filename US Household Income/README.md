@@ -85,12 +85,15 @@ LIMIT 20
 
 <img width="226" alt="type,count" src="https://github.com/user-attachments/assets/fbbc5551-58b3-40e0-9bc6-028cbefeda97">
 
-- What is the correlation between average of BMI & Life Expectancy?
+- What is the average Mean and Median of each state and city?
 ```sql
-
+SELECT u.State_Name, City, ROUND(AVG(Mean),1), ROUND(AVG(Median),1)
+FROM us_project.us_household_income u
+JOIN us_project.us_household_income_statistics us
+	ON u.id = us.id
+GROUP BY u.State_Name, City
+ORDER BY ROUND(AVG(Mean),1) DESC
+LIMIT 10;
 ```
+<img width="323" alt="average mean,medium in each state and city" src="https://github.com/user-attachments/assets/8d2ff656-e3b6-4e76-a759-dda47e8b6757">
 
-- What is the Total number of Adults who died at the end of the Year in the US using Rolling_Total?
-```sql
-
-```
