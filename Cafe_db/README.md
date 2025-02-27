@@ -6,7 +6,7 @@ This project highlights SQL queries used to analyze and manage a cafe database, 
 
 ## Table of Contents
 - [Project Overview](#project-overview)
-- [Data Structure and Schema](#Data Structure and Schema)
+- [Data Structure and Schema](#Data-Structure-and-Schema)
 - Executive Summary
 
 ## 2. Data Structure and Schema
