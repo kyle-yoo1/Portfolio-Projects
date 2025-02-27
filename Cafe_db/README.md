@@ -33,13 +33,13 @@ The database consists of the following tables:
   
 ## 3. Exploratory Data Analysis (EDA)
 - Query 1: Retrieve and Count all cafe in Bellevue city
-  ```sql
+```sql
 SELECT cs.cafe_name, c.city_name
 FROM cafe_shops cs
 JOIN cities c ON cs.city_id = c.city_id
 WHERE c.city_name = 'Bellevue';
 ```
-  <img width="150" alt="cafe_q1" src="https://github.com/user-attachments/assets/da8f49b2-e32a-40b4-8748-89cb11381694" />
+<img width="150" alt="cafe_q1" src="https://github.com/user-attachments/assets/da8f49b2-e32a-40b4-8748-89cb11381694" />
 
 
 ## 4. Executive Summary
