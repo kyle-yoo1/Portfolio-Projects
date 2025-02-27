@@ -29,12 +29,12 @@ LEFT JOIN Cafe_Shops cs ON c.city_id = cs.city_id
 GROUP BY c.city_name
 ORDER BY total_cafes DESC;
 
--- Query 5: Retrieve all cafes that has outlet (YES)
+-- Query 5: Retrieve all cafes that have outlet (YES)
 SELECT cafe_name, city_id, outlet
 FROM cafe_shops
 WHERE outlet = 'YES';
 
--- Query 8: Count the number of menu items per cafe
+-- Query 6: Count the number of menu items per cafe
 SELECT cs.cafe_name, COUNT(m.menu_id) AS total_menu_items
 FROM Cafe_Shops cs
 LEFT JOIN Menu_Items m ON cs.cafe_id = m.cafe_id
