@@ -50,8 +50,7 @@ JOIN cafe_shops cs ON m.cafe_id = cs.cafe_id
 WHERE cs.cafe_name LIKE '%Mercurys%';
 ```
 <img width="188" alt="cafe_q2" src="https://github.com/user-attachments/assets/9baa410f-512a-485a-98a1-d1f5c825073c" />
-
-<br><be>
+<br><br>
 
 - Query 3: What are the unique coffees that include 'Cararel' in Mercurys Coffee (No duplicate)?
 ```sql
@@ -61,8 +60,8 @@ JOIN cafe_shops cs ON m.cafe_id = cs.cafe_id
 WHERE cs.cafe_name LIKE '%Mercurys%' AND m.item_name LIKE '%caramel%';
 ```
 <img width="196" alt="cafe_q3" src="https://github.com/user-attachments/assets/bee75b26-add3-4b97-b092-f48e539ce89d" />
-
 <br><br>
+
 - Query 4: How many cafes are there in each city? (Need to update)
 ```sql
 SELECT c.city_name, COUNT(cs.cafe_id) AS total_cafes
@@ -72,6 +71,27 @@ GROUP BY c.city_name
 ORDER BY total_cafes DESC;
 ```
 <img width="119" alt="cafe_q4" src="https://github.com/user-attachments/assets/815b3d7d-f460-4ea1-920c-9e18a06b9fbc" />
+<br><br>
+
+- Query 5: Which cafes have outlet (YES)?
+```sql
+SELECT cafe_name, city_id, outlet
+FROM cafe_shops
+WHERE outlet = 'YES';
+```
+<img width="189" alt="cafe_q5" src="https://github.com/user-attachments/assets/1ac6efee-4365-48c8-8e65-7097b5933d14" />
+<br><br>
+
+- Query 6: What is the total menu items per cafe?
+```sql
+SELECT cs.cafe_name, COUNT(m.menu_id) AS total_menu_items
+FROM Cafe_Shops cs
+LEFT JOIN Menu_Items m ON cs.cafe_id = m.cafe_id
+GROUP BY cs.cafe_name
+ORDER BY total_menu_items DESC;
+```
+<img width="190" alt="cafe_q6" src="https://github.com/user-attachments/assets/f2974e4d-9f90-4fc8-81a9-666c9bd1efb1" />
+<br><br>
 
 
 
