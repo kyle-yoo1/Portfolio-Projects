@@ -6,10 +6,10 @@ This project highlights SQL queries used to analyze and manage a cafe database, 
 
 ## Table of Contents
 - [Project Overview](#project-overview)
-- Data Structure and Schema
+- [Data Structure and Schema](#Data Structure and Schema)
 - Executive Summary
 
-## 2. Data Structure and Overview
+## 2. Data Structure and Schema
 The database consists of the following tables:
 
 ![drawSQL-image-export-2025-02-21](https://github.com/user-attachments/assets/874d8f54-9998-46fb-b5a6-d74050ed586f)
