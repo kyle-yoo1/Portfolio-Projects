@@ -17,7 +17,7 @@ JOIN cafe_shops cs ON m.cafe_id = cs.cafe_id
 WHERE cs.cafe_name LIKE '%Mercurys%';
 
 -- Query 3: Find UNIQUE coffee that has 'Caramel' coffee drink in Mercurys Coffee (No duplicate)
-SELECT DISTINCT m.item_name, m.category, cs.cafe_name
+SELECT DISTINCT m.item_name, m.category
 FROM menu_items m
 JOIN cafe_shops cs ON m.cafe_id = cs.cafe_id
 WHERE cs.cafe_name LIKE '%Mercurys%' AND m.item_name LIKE '%caramel%';
