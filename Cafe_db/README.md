@@ -32,10 +32,6 @@ The database consists of the following tables:
 - `item_name`
 - `category`
 
-#### `Cafe_Menu`
-- `cafe_id` (Foreign Key referencing Cafe_Shops)
-- `menu_id` (Foreign Key referencing Menu_Items)
-
 ## 3. Executive Summary
 ### Overview of finding
 - Popular drinks include Cappuccino and Caramel-based coffee.
