@@ -7,7 +7,7 @@ This project highlights SQL queries used to analyze and manage a cafe database, 
 ## Table of Contents
 - [Background and Project Overview](#Background-and-Project-Overview)
 - [Data Structure and Schema](#Data-Structure-and-Schema)
-- Executive Summary
+- [Exploratory Data Analysis (EDA)](#Exploratory-Data-Analysis-(EDA))
 
 ## 2. Data Structure and Schema
 The database consists of the following tables:
@@ -31,7 +31,7 @@ The database consists of the following tables:
 - `item_name`
 - `category`
   
-## 3. Queries for Different Scenarios
+## 3. Exploratory Data Analysis (EDA)
 - Query 1: Retrieve and Count all cafe in Bellevue city
   ```sql
 SELECT cs.cafe_name, c.city_name
