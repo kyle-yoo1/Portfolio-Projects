@@ -11,7 +11,7 @@ JOIN cities c ON cs.city_id = c.city_id
 WHERE c.city_name = 'Bellevue';
 
 -- Query 2: Retreive all menu items from Mercurys Coffee
-SELECT m.item_name, m.category, cs.cafe_name
+SELECT m.item_name, m.category
 FROM menu_items m
 JOIN cafe_shops cs ON m.cafe_id = cs.cafe_id
 WHERE cs.cafe_name LIKE '%Mercurys%';
