@@ -15,7 +15,6 @@ The database consists of the following tables:
 ![drawSQL-image-export-2025-02-21 (2)](https://github.com/user-attachments/assets/c5a63ed7-545b-4f0c-a2b4-93661c3438d0)
 
 
-
 #### `Cities`
 - `city_id` (Primary Key)
 - `city_name`
@@ -31,8 +30,13 @@ The database consists of the following tables:
 - `cafe_id` (Foreign Key referencing Cafe_Shops)
 - `item_name`
 - `category`
+  
+## 3. Queries for Different Scenarios
+- 1) Retrieve and Count all cafe in Bellevue city
+     <img width="150" alt="cafe_q1" src="https://github.com/user-attachments/assets/da8f49b2-e32a-40b4-8748-89cb11381694" />
 
-## 3. Executive Summary
+
+## 4. Executive Summary
 ### Overview of finding
 - Popular drinks include Cappuccino and Caramel-based coffee.
 - Some cafes have exclusive menu items not available elsewhere.
