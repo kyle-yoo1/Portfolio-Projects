@@ -32,8 +32,9 @@ The database consists of the following tables:
 - `category`
   
 ## 3. Queries for Different Scenarios
-- 1) Retrieve and Count all cafe in Bellevue city
-     <img width="150" alt="cafe_q1" src="https://github.com/user-attachments/assets/da8f49b2-e32a-40b4-8748-89cb11381694" />
+- Query 1: Retrieve and Count all cafe in Bellevue city
+  
+  <img width="150" alt="cafe_q1" src="https://github.com/user-attachments/assets/da8f49b2-e32a-40b4-8748-89cb11381694" />
 
 
 ## 4. Executive Summary
