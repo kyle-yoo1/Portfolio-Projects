@@ -41,6 +41,7 @@ WHERE c.city_name = 'Bellevue';
 ```
 <img width="150" alt="cafe_q1" src="https://github.com/user-attachments/assets/da8f49b2-e32a-40b4-8748-89cb11381694" />
 
+<br><be>
 
 - Query 2: What menu items are there at Mercurys Coffee Co?
 ```sql
