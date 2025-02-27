@@ -105,9 +105,6 @@ ORDER BY total_menu_items DESC;
 - Certain cities have more diverse tea options.
 - some cafes do not have outlets, but mostly do.
 
-This project demonstrates how SQL queries can drive data analysis and decision-making in the coffee shop industry.
-
-
 
 
 
