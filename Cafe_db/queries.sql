@@ -4,13 +4,13 @@ SELECT * FROM cafe_shops;
 SELECT * FROM cities;
 SELECT * FROM menu_items;
 
--- Query 1: Retrieve and Count all cafe in bellevue city
+-- Query 1: Find and Count all cafe in Bellevue city
 SELECT cs.cafe_name, c.city_name
 FROM cafe_shops cs
 JOIN cities c ON cs.city_id = c.city_id
 WHERE c.city_name = 'Bellevue';
 
--- Query 2: Retreive all menu items from Mercurys Coffee
+-- Query 2: Find all menu items from Mercurys Coffee
 SELECT m.item_name, m.category
 FROM menu_items m
 JOIN cafe_shops cs ON m.cafe_id = cs.cafe_id
@@ -29,7 +29,7 @@ LEFT JOIN Cafe_Shops cs ON c.city_id = cs.city_id
 GROUP BY c.city_name
 ORDER BY total_cafes DESC;
 
--- Query 5: Retrieve all cafes that have outlet (YES)
+-- Query 5: Find all cafes that has outlet (YES)
 SELECT cafe_name, city_id, outlet
 FROM cafe_shops
 WHERE outlet = 'YES';
