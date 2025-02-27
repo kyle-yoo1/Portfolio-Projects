@@ -32,7 +32,7 @@ The database consists of the following tables:
 - `category`
   
 ## 3. Exploratory Data Analysis (EDA)
-- Query 1: Retrieve and Count all cafe in Bellevue city
+- Query 1: Find and Count all cafe in Bellevue city.
 ```sql
 SELECT cs.cafe_name, c.city_name
 FROM cafe_shops cs
@@ -41,7 +41,11 @@ WHERE c.city_name = 'Bellevue';
 ```
 <img width="150" alt="cafe_q1" src="https://github.com/user-attachments/assets/da8f49b2-e32a-40b4-8748-89cb11381694" />
 
-
+- Query 2: What menu items are there at Mercurys Coffee Co?
+SELECT m.item_name, m.category
+FROM menu_items m
+JOIN cafe_shops cs ON m.cafe_id = cs.cafe_id
+WHERE cs.cafe_name LIKE '%Mercurys%';
 ## 4. Executive Summary
 ### Overview of finding
 - Popular drinks include Cappuccino and Caramel-based coffee.
