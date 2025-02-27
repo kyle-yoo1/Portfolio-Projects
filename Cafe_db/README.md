@@ -92,18 +92,8 @@ ORDER BY total_menu_items DESC;
 <img width="190" alt="cafe_q6" src="https://github.com/user-attachments/assets/f2974e4d-9f90-4fc8-81a9-666c9bd1efb1" />
 <br><br>
 
-
-
-
-
-
-
-
-
-
-
 ## 4. Executive Summary
-### Overview of finding
+### Overview of Finding
 - Popular drinks include Cappuccino and Caramel-based coffee.
 - Some cafes have exclusive menu items not available elsewhere.
 - Certain cities have more diverse tea options.
