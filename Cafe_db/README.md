@@ -1,11 +1,11 @@
 # Cafe Database Management Project
 
-## 1. Background and Overview
+## 1. Background and Project Overview
 
 This project highlights SQL queries used to analyze and manage a cafe database, focusing on retrieving insights about coffee shops, menu items, and sales trends.
 
 ## Table of Contents
-- [Project Overview](#project-overview)
+- [Background and Project Overview](#Background-and-Project-Overview)
 - [Data Structure and Schema](#Data-Structure-and-Schema)
 - Executive Summary
 
