@@ -11,8 +11,9 @@ This project highlights SQL queries used to analyze and manage a cafe database, 
 
 ## 2. Data Structure and Schema
 The database consists of the following tables:
-![drawSQL-image-export-2025-02-21](https://github.com/user-attachments/assets/0f3d028d-3ada-4ac2-bab4-b9b1b094496e)
 
+
+![drawSQL-image-export-2025-02-21 (1)](https://github.com/user-attachments/assets/12dcbad8-2fe5-4126-bc8b-afb18a3c4ed3)
 
 #### `Cities`
 - `city_id` (Primary Key)
