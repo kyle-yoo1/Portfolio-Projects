@@ -14,6 +14,9 @@ The database consists of the following tables:
 
 
 ![drawSQL-image-export-2025-02-21 (1)](https://github.com/user-attachments/assets/12dcbad8-2fe5-4126-bc8b-afb18a3c4ed3)
+![drawSQL-image-export-2025-02-21 (2)](https://github.com/user-attachments/assets/c5a63ed7-545b-4f0c-a2b4-93661c3438d0)
+
+
 
 #### `Cities`
 - `city_id` (Primary Key)
