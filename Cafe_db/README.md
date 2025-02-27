@@ -14,7 +14,6 @@ The database consists of the following tables:
 
 ![drawSQL-image-export-2025-02-21 (2)](https://github.com/user-attachments/assets/c5a63ed7-545b-4f0c-a2b4-93661c3438d0)
 
-
 #### `Cities`
 - `city_id` (Primary Key)
 - `city_name`
@@ -32,7 +31,7 @@ The database consists of the following tables:
 - `category`
   
 ## 3. Exploratory Data Analysis (EDA)
-- Query 1: Find and Count all cafe in Bellevue city.
+- Query 1: What cafes are there in Bellevue city?
 ```sql
 SELECT cs.cafe_name, c.city_name
 FROM cafe_shops cs
