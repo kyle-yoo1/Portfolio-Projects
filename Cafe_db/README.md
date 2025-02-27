@@ -50,7 +50,8 @@ JOIN cafe_shops cs ON m.cafe_id = cs.cafe_id
 WHERE cs.cafe_name LIKE '%Mercurys%';
 ```
 <img width="188" alt="cafe_q2" src="https://github.com/user-attachments/assets/9baa410f-512a-485a-98a1-d1f5c825073c" />
-<br>
+
+
 - Query 3: What are the unique coffees that include 'Cararel' in Mercurys Coffee (No duplicate)?
 ```sql
 SELECT DISTINCT m.item_name, m.category
