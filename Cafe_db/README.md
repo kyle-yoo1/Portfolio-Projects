@@ -8,6 +8,12 @@
 ## 1. Background and Project Overview
 This project highlights SQL queries used to analyze and manage a cafe database, focusing on retrieving insights about coffee shops, menu items, and sales trends.
 
+- Enable users to search for cafes based on menu items
+- Allow users to filter cafes based on location
+- Provide insights into the distribution of cafes across different cities.
+- Identify the most popular items and trends in the cafe industry.
+- Help cafe owners make data-driven decisions to improve customer experience and business sales.
+
 
 ## 2. Data Structure and Schema
 The database consists of the following tables:
