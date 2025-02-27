@@ -41,7 +41,7 @@ WHERE c.city_name = 'Bellevue';
 ```
 <img width="150" alt="cafe_q1" src="https://github.com/user-attachments/assets/da8f49b2-e32a-40b4-8748-89cb11381694" />
 
-<br><be>
+<br><br>
 
 - Query 2: What menu items are there at Mercurys Coffee Co?
 ```sql
@@ -52,6 +52,7 @@ WHERE cs.cafe_name LIKE '%Mercurys%';
 ```
 <img width="188" alt="cafe_q2" src="https://github.com/user-attachments/assets/9baa410f-512a-485a-98a1-d1f5c825073c" />
 
+<br><be>
 
 - Query 3: What are the unique coffees that include 'Cararel' in Mercurys Coffee (No duplicate)?
 ```sql
@@ -62,7 +63,7 @@ WHERE cs.cafe_name LIKE '%Mercurys%' AND m.item_name LIKE '%caramel%';
 ```
 <img width="196" alt="cafe_q3" src="https://github.com/user-attachments/assets/bee75b26-add3-4b97-b092-f48e539ce89d" />
 
-
+<br><br>
 - Query 4: How many cafes are there in each city? (Need to update)
 ```sql
 SELECT c.city_name, COUNT(cs.cafe_id) AS total_cafes
