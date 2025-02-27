@@ -5,7 +5,7 @@
 This project highlights SQL queries used to analyze and manage a cafe database, focusing on retrieving insights about coffee shops, menu items, and sales trends.
 
 ## Table of Contents
-- Project Overview (#project-overview)
+- [Project Overview](#project-overview)
 - Data Structure and Schema
 - Executive Summary
 
