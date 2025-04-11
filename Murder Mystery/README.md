@@ -20,7 +20,8 @@ Step 1: Retrieve Crime Scene Report
 SELECT *
 FROM crime_scene_report;
 ```
-![image.png](attachment:b5bf9cfb-20d1-4c75-974c-da5f12c381fe:image.png)
+<img width="470" alt="1" src="https://github.com/user-attachments/assets/0dacbd3a-6534-4104-aa9a-7d5963938e9a" />
+
 
 
 
