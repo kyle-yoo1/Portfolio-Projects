@@ -85,3 +85,79 @@ WHERE person_id IN ("14887", "16371");
     - He was working out at the gym on 9th Jan.
     - He drives a car with car plate containing "H42W".
 
+### STEP 8: Check Gym Checks-Ins using Clues
+```sql
+SELECT *
+FROM get_fit_now_check_in
+WHERE membership_id LIKE '48Z%'
+AND check_in_date = "20180109";
+```
+<img width="310" alt="8" src="https://github.com/user-attachments/assets/70f7bf90-affa-4c5b-a5f5-eb3100e8dc37" />
+
+### STEP 9: Verify Gender and Car Plate Number
+```sql
+SELECT *
+FROM driver_license
+WHERE gender = "male"
+AND plate_number LIKE '%H42W%';
+```
+<img width="446" alt="9" src="https://github.com/user-attachments/assets/a056cbe6-7b8c-48a3-9f36-81dd788b12db" />
+
+### STEP 10: Gather Additional Information about Potential Suspects
+```sql
+SELECT *
+FROM person
+WHERE license_id IN ("423327", "664760");
+```
+<img width="436" alt="10" src="https://github.com/user-attachments/assets/65e82359-72d6-4e1e-9cf0-696e0e0b6677" />
+
+### STEP 11: Finalize Suspect Identification
+```sql
+SELECT *
+FROM get_fit_now_member
+WHERE person_id IN ("51739", "67318");
+```
+<img width="403" alt="11" src="https://github.com/user-attachments/assets/c9e175ed-e2d8-4edd-938e-d0adbc8d799f" />
+
+⇒ person_id & id 67318, name Jeremy Bowers
+
+### STEP 12: Confirm Solution in the Database
+```sql
+INSERT INTO solution VALUES (1, "Jeremy Bowers");
+SELECT value FROM solution;
+```
+<img width="503" alt="12" src="https://github.com/user-attachments/assets/cd76a9c5-e08d-4c53-92e4-fc172f27bf12" />
+
+### STEP 13: Analyze Murderer’s Interview
+```sql
+SELECT *
+FROM person
+WHERE name = "Jeremy Bowers";
+
+SELECT *
+FROM interview
+WHERE person_id = "67318";
+```
+<img width="503" alt="13" src="https://github.com/user-attachments/assets/185a8fcd-01bf-4296-8bf1-0c0b6d615590" />
+
+
+- **Key Cues**
+    - The real villain is a female, approximately 5'5" (65") or 5'7" (67") tall.
+    - She has red hair and drives a Tesla Model S.
+    - She attended the SQL Symphony Concert 3 times in December 2017.
+ 
+### STEP 14: Identify Telsa Model S Owners
+```sql
+SELECT *
+FROM drivers_license
+WHERE gender = "female"
+	AND hair_color = "red"
+	AND height BETWEEN 65 AND 67
+	AND car_make = "Telsa"
+	AND car_model = "Model S";
+```
+
+
+
+
+
