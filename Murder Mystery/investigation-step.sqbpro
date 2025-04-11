@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="sql-murder-mystery-db.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="browser pragmas query" current="2"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="5161"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="crime_scene_report" custom_title="0" dock_id="6" table="4,18:maincrime_scene_report"/><dock_state state="000000ff00000000fd0000000100000002000004f40000021efc0100000003fb000000160064006f0063006b00420072006f00770073006500310100000000000004f40000000000000000fb000000160064006f0063006b00420072006f00770073006500340100000000000004f40000000000000000fb000000160064006f0063006b00420072006f00770073006500360100000000000004f40000012d00ffffff000004f40000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="crime_scene_report" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="70"/><column index="2" value="78"/><column index="3" value="300"/><column index="4" value="140"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">/*
+SQL Murder Mystery
+By Kyle Yoo
+*/
+
+-- Step 1: Retrieve Crime Scene Report
+SELECT *
+FROM crime_scene_report;
+
+-- Step2: Filter Crime Scenes by type
+SELECT *
+FROM crime_scene_report
+WHERE type = &quot;murder&quot;;
+
+-- Step 3: Narrow Down Crime Scenes by Date and City
+SELECT *
+FROM crime_scene_report
+WHERE type = &quot;murder&quot;
+	AND date = 20180115
+	AND city = &quot;SQL City&quot;;
+	
+-- Step 4: Explore Person Table
+SELECT *
+FROM person
+LIMIT 5;
+
+-- Step 5: Identify First Witness’s Location
+SELECT *
+FROM person
+WHERE address_street_name = &quot;Northwestern Dr&quot;
+ORDER BY address_number DESC
+LIMIT 5;
+-- RESULT | name = Morty Schapiro, id 14887, license_id = 118009, ssn = 111564949
+
+-- Step 6: Locate Second Witness by Name and Address
+SELECT *
+FROM person
+WHERE name LIKE '%Annabel%'
+AND address_street_name = &quot;Franklin Ave&quot;;
+-- RESULT | name = Annabel Miller, id = 16371, license_id = 490173, ssn = 318771143
+
+-- STEP 7: Review Witness Interviews
+SELECT *
+FROM interview
+WHERE person_id IN (&quot;14887&quot;, &quot;16371&quot;)
+
+-- STEP 8: Check Gym Checks-Ins using Clues
+SELECT *
+FROM get_fit_now_check_in
+WHERE membership_id LIKE '48Z%'
+	AND check_in_date = &quot;20180109&quot;;
+	
+-- STEP 9: Verify Gender and Car Plate Number
+SELECT *
+FROM drivers_license
+WHERE gender = &quot;male&quot;
+	AND plate_number LIKE '%H42W%';
+	
+-- STEP 10: Gather Additional Information about Potential Suspects
+SELECT *
+FROM person
+WHERE license_id IN (&quot;423327&quot;, &quot;664760&quot;);
+
+-- STEP 11: Finalize Suspect Identification
+SELECT *
+FROM get_fit_now_member
+WHERE person_id IN (&quot;51739&quot;, &quot;67318&quot;);
+
+-- STEP 12: Confirm Solution in the Database
+INSERT INTO solution VALUES (1, &quot;Jeremy Bowers&quot;);
+SELECT value FROM solution;
+
+-- STEP 13: Analyze Murderer’s Interview
+SELECT *
+FROM person
+WHERE name = &quot;Jeremy Bowers&quot;;
+
+SELECT *
+FROM interview
+WHERE person_id = &quot;67318&quot;;
+
+-- STEP 14: Identify Telsa Model S Owners
+SELECT *
+FROM drivers_license
+WHERE gender = &quot;female&quot;
+	AND hair_color = &quot;red&quot;
+	AND height BETWEEN 65 AND 67
+	AND car_make = &quot;Telsa&quot;
+	AND car_model = &quot;Model S&quot;;
+	
+-- STEP 15: Retrieve Personal Details of Potential Suspects
+SELECT *
+FROM person
+WHERE license_id
+IN (&quot;202298&quot;, &quot;291182&quot;, &quot;918773&quot;);
+
+-- STEP 16: Determine SQL Symphony Concert Attendees
+SELECT person_id, event_name, COUNT(*) AS event_count
+FROM facebook_event_checkin
+WHERE person_id IN (&quot;78881&quot;, &quot;90700&quot;, &quot;99716&quot;)
+GROUP BY person_id, event_name;
+
+-- STEP 17: Find The True Villain
+SELECT *
+FROM person
+WHERE id = 99716;
+
+-- STEP 18: Confirm The Culprit
+INSERT INTO solution VALUES (1, 'Miranda Priestly');
+SELECT value FROM solution;
+</sql><current_tab id="0"/></tab_sql></sqlb_project>
