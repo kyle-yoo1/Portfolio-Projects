@@ -156,6 +156,47 @@ WHERE gender = "female"
 	AND car_make = "Telsa"
 	AND car_model = "Model S";
 ```
+<img width="447" alt="14" src="https://github.com/user-attachments/assets/8bbafbfa-bf0d-4c1a-b65e-7b117fe29228" />
+
+### STEP 15: Retrieve Personal Details of Potential Suspects
+```sql
+SELECT *
+FROM person
+WHERE license_id IN ("202298", "291182", "918773");
+```
+<img width="441" alt="15" src="https://github.com/user-attachments/assets/dbd4bf0d-3a0b-4438-a103-11471649de9e" />
+
+### STEP 16: Determine SQL Symphony Concert Attendees
+```sql
+SELECT person_id, event_name, COUNT(*) AS event_count
+FROM facebook_event_checkin
+WHERE person_id IN ("78881", "90700", "99716")
+GROUP BY person_id, event_name;
+```
+<img width="233" alt="16" src="https://github.com/user-attachments/assets/8d1e9c81-8abf-459f-9239-98c859955252" />
+
+### STEP 17: Find The True Villain
+```sql
+SELECT *
+FROM person
+WHERE id = 99716;
+```
+<img width="437" alt="17" src="https://github.com/user-attachments/assets/101a43f7-f6fb-43e9-8824-17605c8594c0" />
+
+### STEP 18: Confirm The Culprit
+```sql
+INSERT INTO solution VALUES (1, 'Miranda Priestly');
+SELECT value FROM solution;
+```
+<img width="503" alt="18" src="https://github.com/user-attachments/assets/8f825d68-f722-45b3-85ad-272a5df1ae3d" />
+
+## What I learned:
+- How to navigate a complex relational database schema usign SQL alone
+- Importance of breaking down large analytical problems into logical steps
+- Enhanced my ability to connect disparate data points into one cohesive narrative
+- Praticed investigative thinking through a fun, real-world inspired dataset
+
+
 
 
 
