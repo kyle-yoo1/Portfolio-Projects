@@ -6,4 +6,6 @@ A crime has taken place and the detective needs your help. The detective gave yo
 Primary Keys are unqiue identifiers, ensuring no duplicates. They are represented by gold icons 🔑.
 
 Foreign Keys are arrow 🏹 connecting related data across tables, establishing relationships.
-![download.png](attachment:a6604e6e-117a-4f3e-abab-9988b85348ea:download.png)
+
+![schema](https://github.com/user-attachments/assets/703f3e56-dc55-40d7-8523-26805f880770)
+
