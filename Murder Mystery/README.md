@@ -69,6 +69,7 @@ WHERE name LIKE '%Annabel%'
 AND address_street_name = "Franklin Ave";
 ```
 <img width="423" alt="6" src="https://github.com/user-attachments/assets/2ed58008-4ea0-4f1c-a166-923a722fc14d" />
+
 ⇒ Second witness name is Annabel Miller with id 16371, license_id 490173, and ssn 318771143.
 
 ### STEP 7: Review Witness Interviews
