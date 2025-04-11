@@ -22,7 +22,7 @@ FROM crime_scene_report;
 ```
 <img width="470" alt="1" src="https://github.com/user-attachments/assets/0dacbd3a-6534-4104-aa9a-7d5963938e9a" />
 
-Step 2: Filter Crime Scenes by Type
+### Step 2: Filter Crime Scenes by Type
 ```sql 
 SELECT *
 FROM crime_scene_report
