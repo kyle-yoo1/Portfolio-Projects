@@ -31,7 +31,7 @@ WHERE type = "murder";
 <img width="443" alt="2" src="https://github.com/user-attachments/assets/6e1ac8bd-c646-4cdf-a1a8-7ba333600ada" />
 
 
-Step 3: Narrow Down Crime Scenes by Date and City
+### Step 3: Narrow Down Crime Scenes by Date and City
 ```sql 
 SELECT *
 FROM crime_scene_report
@@ -43,7 +43,7 @@ AND city = "SQL City";
 => First witness’s address is “Northwestern Dr’
 => Second witness's name is “Annabel”, and lives at “Franklin Ave”
 
-Step 4: Explore Person Table
+### Step 4: Explore Person Table
 ```sql
 SELECT *
 FROM person;
@@ -51,7 +51,7 @@ LIMIT 5;
 ```
 <img width="497" alt="4" src="https://github.com/user-attachments/assets/fa817f27-dd12-4220-943a-66ccbfe00372" />
 
-Step 5: Identify the First Witness’s Location
+### Step 5: Identify the First Witness’s Location
 ```sql
 SELECT *
 FROM person
@@ -61,7 +61,7 @@ LIMIT 5;<img width="439" alt="5" src="https://github.com/user-attachments/assets
 ```
 ⇒ First witness name is Morty Schapiro with id 14887, license_id 118009, and ssn 111564949.
 
-Step 6: Locate Second Witness by Name and Address
+### Step 6: Locate Second Witness by Name and Address
 ```sql
 SELECT *
 FROM person
@@ -71,13 +71,14 @@ AND address_street_name = "Franklin Ave";
 <img width="423" alt="6" src="https://github.com/user-attachments/assets/2ed58008-4ea0-4f1c-a166-923a722fc14d" />
 ⇒ Second witness name is Annabel Miller with id 16371, license_id 490173, and ssn 318771143.
 
-STEP 7: Review Witness Interviews
+### STEP 7: Review Witness Interviews
 ```sql
 SELECT  *
 FROM interview
 WHERE person_id IN ("14887", "16371");
 ```
 <img width="423" alt="7" src="https://github.com/user-attachments/assets/490ac378-abff-43d7-bff4-864f60febbe0" />
+
 - **Key Cues**
     - Murderer is a man and a member of a gym called "Get Fit Now Gym" and has a gold membership no. starting from "48Z".
     - He was working out at the gym on 9th Jan.
