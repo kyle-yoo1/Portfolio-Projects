@@ -15,7 +15,7 @@ Foreign Keys are arrow 🏹 connecting related data across tables, establishing 
 - The crime scene occurred at “SQL City” → `city` field
 
 ## Step-by-Step Highlights
-Step 1: Retrieve Crime Scene Report
+### Step 1: Retrieve Crime Scene Report
 ```sql
 SELECT *
 FROM crime_scene_report;
