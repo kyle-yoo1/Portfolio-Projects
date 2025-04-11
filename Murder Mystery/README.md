@@ -9,3 +9,9 @@ Foreign Keys are arrow 🏹 connecting related data across tables, establishing 
 
 ![schema](https://github.com/user-attachments/assets/703f3e56-dc55-40d7-8523-26805f880770)
 
+### Key Clues to Crime Scene Report
+- The crime is a “murder” →  `type` field
+- The crime scene occurred on “Jan 15, 2018 (20180115)” → `date` field
+- The crime scene occurred at “SQL City” → `city` field
+
+
