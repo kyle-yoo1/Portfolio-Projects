@@ -14,4 +14,13 @@ Foreign Keys are arrow 🏹 connecting related data across tables, establishing 
 - The crime scene occurred on “Jan 15, 2018 (20180115)” → `date` field
 - The crime scene occurred at “SQL City” → `city` field
 
+## Step-by-Step Highlights
+Step 1: Retrieve Crime Scene Report
+```sql
+SELECT *
+FROM crime_scene_report;
+```
+![image.png](attachment:b5bf9cfb-20d1-4c75-974c-da5f12c381fe:image.png)
+
+
 
